@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.loading-wrapper {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-wrapper {
+	background-color: #282c34;
+	display: flex;
+	justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tasks-container {
+	width: 100%;	
+	max-width: 720px;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task {
+	padding: 20px;
+	background-color: white;
+	border-radius: 5px;
+	color: #282c34;
+	width: 220px;
+	margin: 16px;
+	flex-grow: 1;
+	font-size: 16px;
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.task-title {
+	font-size: 12px;
+	margin-top: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-wrapper {
+	position: fixed;
+	min-height: 100vh;
+	background-color: rgb(40 44 52 / 80%);
+	min-width: 100vw;
+	left: 0;
+	top: 0;
+}
+
+.modal {
+	max-width: 320px;
+	background-color: white;
+	padding: 16px;
+	height: 120px;
+	border-radius: 8px;
+	margin: 16px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.done-task {
+	background-color: lawngreen;
 }
